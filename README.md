@@ -1,7 +1,7 @@
 # juniper_iron
 
 [![Build Status](https://travis-ci.org/graphql-rust/juniper_iron.svg?branch=master)](https://travis-ci.org/graphql-rust/juniper_iron)
-[![Build status](https://ci.appveyor.com/api/projects/status/fq6m6e7dof6trrpf/branch/master?svg=true)](https://ci.appveyor.com/project/graphql-rust/juniper_iron/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/rqguvfkl9m0g7hum?svg=true)](https://ci.appveyor.com/project/theduke/juniper-iron)
 [![Crates.io](https://img.shields.io/crates/v/juniper_iron.svg?maxAge=2592000)](https://crates.io/crates/juniper_iron)
 [![Gitter chat](https://badges.gitter.im/juniper-graphql/gitter.png)](https://gitter.im/juniper-graphql)
 
