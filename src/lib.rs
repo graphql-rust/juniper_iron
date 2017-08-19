@@ -178,8 +178,8 @@ impl<'a, CtxFactory, Query, Mutation, CtxT> GraphQLHandler<'a, CtxFactory, Query
 where
     CtxFactory: Fn(&mut Request) -> CtxT + Send + Sync + 'static,
     CtxT: 'static,
-    Query: GraphQLType<Context = CtxT> + Send + Sync + 'static,
-    Mutation: GraphQLType<Context = CtxT> + Send + Sync + 'static,
+    Query: GraphQLType<Context = CtxT, TypeInfo=()> + Send + Sync + 'static,
+    Mutation: GraphQLType<Context = CtxT, TypeInfo=()> + Send + Sync + 'static,
 {
     /// Build a new GraphQL handler
     ///
@@ -250,8 +250,8 @@ impl<'a, CtxFactory, Query, Mutation, CtxT> Handler
 where
     CtxFactory: Fn(&mut Request) -> CtxT + Send + Sync + 'static,
     CtxT: 'static,
-    Query: GraphQLType<Context = CtxT> + Send + Sync + 'static,
-    Mutation: GraphQLType<Context = CtxT> + Send + Sync + 'static,
+    Query: GraphQLType<Context = CtxT, TypeInfo=()> + Send + Sync + 'static,
+    Mutation: GraphQLType<Context = CtxT, TypeInfo=()> + Send + Sync + 'static,
     'a: 'static,
 {
     fn handle(&self, mut req: &mut Request) -> IronResult<Response> {
